@@ -1,42 +1,79 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
-        <meta name="description" content="Marc Galang - Web developer">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Marc Galang | Web Developer</title>
+        <meta name="description" content="Marc Galang - Web Developer">
+        <meta name="viewport" content="width=device-width">
 
-        <title>Marc Galang | Web developer</title>
-        
-        <link rel="stylesheet" href="media/css/styles.css">
-        
-        <!--[if lt IE 9]>
-          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    
     <body>
 
-		<section id="infoPage">
-	
-    		<img src="media/img/me.jpg" alt="Marc Galang" width="160" height="156">
+        <div class="header-container">
+          <header class="wrapper clearfix">
+            <div class="logo">MG</div>
+            <div class="social">
+              <a href="https://www.facebook.com/m.marcgalang"><img src="img/icons/facebook.png" /></a>
+              <a href="https://github.com/mgalang"><img src="img/icons/github.png" /></a>
+              <a href="https://twitter.com/marcgalang_"><img src="img/icons/twitter.png" /></a>
+              <a href="http://www.linkedin.com/in/marcgalang"><img src="img/icons/linkedin.png" /></a>
+            </div>
+          </header>
+        </div>
 
-            <header>
-                <h1>Marc Galang</h1>
-                <h2>Web + Mobile Developer</h2>
-            </header>
-            
-            <p class="description">I am a Filipino web developer living in Turku, Finland. I'm a graduate of Bachelor in Computer Science. My hobbies include photography, computer hardware, Tennis, and skiing.</p>
-            <p class="description">Skillset: HTML5, CSS3, JS, PHP, SQL, NoSQL. Technologies: Nginx, Apache, MySQL, Linux, Mac, Node.js, Drupal, Kohana, jQuery</p>
-            
-            <a href="http://www.facebook.com/marchenrygalang" class="grayButton facebook">Find me on Facebook</a>
-		</section>
-        
-        <section id="links">
-	    <a href="https://github.com/mgalang/mgalang.github.com">Git source</a>
-            <p>Copyright &copy; 2012 - www.marcgalang.com</p>
-        </section>
-        
-          
-    
+        <div class="hero-container">
+          <div class="hero wrapper clearfix">
+            <h1 class="title">Marc Galang</h1>
+            <h3 class="description">Web Developer</h3>
+          </div>
+        </div>
 
-</body></html>
+        <div class="main-container" role="main">
+            <div class="main wrapper clearfix">
+              <div class="row">
+                <div class="col">
+                  <h3 class="header">About me</h3>
+                  <p>I'm a Filipino web developer currently working and living in Finland. I have a lovely wife and two boys. </p>
+                  <p>When not coding my hobbies include biking, violin, photography, tennis, games, and skiing.</p>
+                </div>
+                <div class="col">
+                  <h3 class="header">Skills & Expertise</h3>
+                  <p>I'm fairly proficient with the follow languages: Javascript, PHP, HTML5, CSS3, SQL.</p>
+                  <p>
+                    Other tools and technologies that I use often are: Nginx, Apache, MySQL, Mongodb, Elasticsearch, Linux, Amazon-AWS, SASS, Git, Mac, Node.js, Drupal, jQuery, Vim, and more...
+                  </p>
+                </div>
+                <div class="col">
+                  <h3 class="header">Work and Education</h3>
+                  <p>At the moment I'm working as a web developer at <a href="http://panic.fi" target="_blank">Panic.</a></p>
+                  <p>My previous education was in Computer Science.</p>
+                  <p>I can also speak Filipino, English, and Finnish.</p>
+                </div>
+ 
+              </div>
+             
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+              &copy; 2014 - Marc Galang (marcgalang.me)
+            </footer>
+        </div>
+
+        <script>
+            var _gaq=[['_setAccount','UA-40141908-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

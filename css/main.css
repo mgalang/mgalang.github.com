@@ -1,0 +1,345 @@
+
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.header-container{
+  background: #202020;
+  min-height: 2.5em;
+  padding: 1em 0;
+}
+
+.social{
+  float: right;
+}
+
+.logo{
+  float: left;
+  color: #FFF;
+  font-size: 1.8em;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.hero-container{
+  background: url(../img/hero-bg.jpg) center center no-repeat;
+  padding: 8em 1em;
+}
+
+.hero{
+  text-align: center;
+  color: #fff;
+}
+
+.hero .title{
+  font-size: 4em;
+  font-weight: 200;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.hero .title small{
+  font-size: inherit;
+  font-weight: 100;
+}
+
+.hero .description{
+  font-weight: 200;
+  font-size: 1.3em;
+}
+
+.hero h1,
+.hero h3{
+  margin: 0; 
+}
+
+.arrow{
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 36px 45px 0 45px;
+  border-color: #000000 transparent transparent transparent;
+}
+
+.main .row{
+  margin: 3em 0;
+  display: table;
+}
+
+.main .col .header{
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #555;
+  margin: 0;
+}
+
+.main .col{
+  width: 33%;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  color: #999;
+  font-weight: 200;
+  font-size: 1.1em;
+}
+
+.main a:link,
+.main a:visited{
+  color: #37A2FF;
+  border-bottom: 1px dotted #37A2FF;
+  text-decoration: none;
+}
+
+.main a:hover{
+  border-bottom: 0px;
+}
+
+.footer-container{
+  background: #2C2C2C;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+footer{
+  color: #727272;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+  
+
+  .main .col{
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 15px;
+  }
+
+  .hero-container{
+    padding: 5em 1em;
+  }
+
+  .hero .title{
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main .col{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
