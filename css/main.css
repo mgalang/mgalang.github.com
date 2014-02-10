@@ -79,6 +79,7 @@ textarea {
   font-size: 1.8em;
   margin-left: 10px;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .hero-container{
