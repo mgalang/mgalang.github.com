@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+  pre {
+    background: #959595;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: #fff;
+    padding: 10px;
+  }
+  </style>
+</head>
+<h3>Example1: Blending 2 images</h3>
+<p><a href="img/pic1.jpg">Image1</a> and <a href="img/pic2.jpg">Image2</a></p>
+  <canvas id="canvas1" width="500" height="500"></canvas>
+
+<pre>
+  var canvas1 = new fabric.StaticCanvas('canvas1');
+
+  fabric.Image.fromURL('img/pic1.jpg', function(img1){
+    fabric.Image.fromURL('img/pic2.jpg', function(img2){
+      // create blend filter with image2
+      var filter = new fabric.Image.filters.Blend({
+        image: img2,
+        mode: 'add',
+        alpha: 0.9
+      });
+
+      // push filter to image1
+      img1.filters.push(filter);
+
+      // apply filters and re-render canvas when done
+      img1.applyFilters(canvas1.renderAll.bind(canvas1));
+
+      // add image1 onto canvas1
+      canvas1.add(img1);
+    });
+  });
+</pre>
+
+<h3>Example 2: Blending image + color</h3>
+
+<canvas id="canvas2" width="500" height="500"></canvas>
+<pre>
+  var canvas2 = new fabric.StaticCanvas('canvas2');
+
+  fabric.Image.fromURL('img/pic2.jpg', function(img1){
+    // create blend filter with color
+    var filter = new fabric.Image.filters.Blend({
+      color: '#ff0000',
+      mode: 'multiply'
+    });
+
+    // push filter to image1
+    img1.filters.push(filter);
+
+    // apply filters and re-render canvas when done
+    img1.applyFilters(canvas2.renderAll.bind(canvas2));
+
+    // add image1 onto canvas2
+    canvas2.add(img1);
+  });
+</pre>
+</body>
+<script src="fabric.js"></script>
+<script src="script.js"></script>
+</html>
