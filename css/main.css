@@ -136,8 +136,8 @@ header{
 }
 
 .main .col .header{
-  font-size: 1.2em;
-  font-weight: 400;
+  font-size: 1.4em;
+  font-weight: 200;
   color: #555;
   margin: 0;
 }
@@ -150,7 +150,15 @@ header{
   box-sizing: border-box;
   color: #999;
   font-weight: 200;
-  font-size: 1.1em;
+  font-size: 1em;
+  text-align: center;
+}
+
+.main .col .icon{
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 0.2em;
+  color: #69B9FF;
 }
 
 .main a:link,
