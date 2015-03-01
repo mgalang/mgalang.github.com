@@ -9,69 +9,89 @@
         <title>Marc Galang | Web Developer</title>
         <meta name="description" content="Marc Galang - Web Developer">
         <meta name="viewport" content="width=device-width">
-
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bundle.min.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
-
-        <div class="header-container">
-          <header class="clearfix">
-            <a href="/" class="logo">MG</a>
-            <div class="social">
-              <a href="https://www.facebook.com/m.marcgalang"><img src="img/icons/facebook.png" /></a>
-              <a href="https://github.com/mgalang"><img src="img/icons/github.png" /></a>
-              <a href="https://twitter.com/marcgalang_"><img src="img/icons/twitter.png" /></a>
-              <a href="http://www.linkedin.com/in/marcgalang"><img src="img/icons/linkedin.png" /></a>
-            </div>
-          </header>
+      <div class="main-wrapper">
+      <header class="clearfix">
+        <div class="container">
+          <a href="/" class="logo">@marcgalang</a>
+          <div class="social">
+            <a href="https://www.facebook.com/m.marcgalang"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://github.com/mgalang"><i class="fa fa-github"></i></a>
+            <a href="https://twitter.com/marcgalang_"><i class="fa fa-twitter"></i></a>
+            <a href="http://www.linkedin.com/in/marcgalang"><i class="fa fa-linkedin"></i></a>
+          </div>
         </div>
+      </header>
 
-        <div class="hero-container">
-          <div class="hero wrapper clearfix">
+      <section class="hero">
+        <div class="container clearfix" id="hero-bg">
+          <div class="inner">
             <h1 class="title">Marc Galang</h1>
             <h3 class="description">Web Developer</h3>
           </div>
         </div>
+      </section>
 
-        <div class="main-container" role="main">
-            <div class="main wrapper clearfix">
-              <div class="row">
-                <div class="col">
-                  <h3 class="header">About me</h3>
-                  <p>I'm a Filipino web developer currently working and living in Finland. I have a lovely wife and two boys. </p>
-                  <p>When not coding my hobbies include biking, violin, photography, tennis, games, solving the rubik's cube, and skiing.</p>
-                </div>
-                <div class="col">
-                  <h3 class="header">Skills & Expertise</h3>
-                  <p>Knows the following languages: Javascript, Python, PHP (if really needed), HTML5, CSS3, SQL.</p>
-                  <p>
-                    Other tools and technologies that I use: Nginx, Apache, MySQL, Redis, Mongodb, Elasticsearch, Linux, SASS, Git, Mac, Grunt, Composer, Node.js, Flask, Drupal, jQuery, Vim, and more...
-                  </p>
-                </div>
-                <div class="col">
-                  <h3 class="header">Work and Education</h3>
-                  <p>At the moment I'm working as a web developer at <a href="http://panic.fi" target="_blank">Panic.</a></p>
-                  <p>My previous education was in Computer Science.</p>
-                  <p>I can also speak Filipino, English, and Finnish (basic).</p>
-                </div>
- 
-              </div>
-             
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
-
-        <div class="footer-container">
-            <footer class="wrapper">
-              &copy; 2014 - Marc Galang (marcgalang.me)
-            </footer>
+      <div class="main clearfix" role="main">
+        <div class="wrapper container">
+          <div class="row clearfix">
+            <div class="col">
+              <h3 class="header">About me</h3>
+              <p>I'm a Filipino web developer currently living in Finland with my lovely wife and two boys. </p>
+              <p>When not coding my hobbies include biking, violin, photography, tennis, games, solving the rubik's cube, and skiing.</p>
+            </div>
+            <div class="col">
+              <h3 class="header">Skills & Expertise</h3>
+              <p>Knows the following languages: Javascript, Python, PHP, HTML5, CSS3, SQL.</p>
+              <p>
+              Other tools and technologies that I use: Nginx, Apache, MySQL, Redis, Elasticsearch, Linux, SASS, Git, Mac, Grunt, Composer, Node.js, Flask, Drupal, jQuery, Vim, and more...
+              </p>
+            </div>
+            <div class="col">
+              <h3 class="header">Work and Education</h3>
+              <p>At the moment I'm working as a web developer at <a href="http://panic.fi" target="_blank">Panic.</a></p>
+              <p>My previous education was in Computer Science.</p>
+              <p>I can also speak Filipino, English, and Finnish (basic).</p>
+            </div>
+          </div>
         </div>
-        <script>
-            var _gaq=[['_setAccount','UA-40141908-1'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+      </div> <!-- #main -->
+      </div>
+      <footer class="clearfix">
+        <div class="container">
+          &copy; 2015 - Marc Galang (marcgalang.me)
+        </div>
+      </footer>
+      <script>
+        (function(global){
+          // header full page
+          var wheight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+          var min = 360, max = 700, h = max;
+
+          if(wheight < min){
+            h = min;
+          } else if(wheight > max){
+            h = max;
+          } else {
+            h = wheight;
+          }
+
+          document
+            .getElementById('hero-bg')
+            .setAttribute('style', 'height: ' + (h-51) + 'px;');
+        })(window);
+      </script>
+      <script>
+          var _gaq=[['_setAccount','UA-40141908-1'],['_trackPageview']];
+          (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src='//www.google-analytics.com/ga.js';
+          s.parentNode.insertBefore(g,s)}(document,'script'));
+      </script>
     </body>
 </html>

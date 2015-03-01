@@ -1,20 +1,18 @@
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
-
 html,
 button,
 input,
 select,
 textarea {
     color: #222;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     font-size: 1em;
     line-height: 1.4;
-    font-family: 'Roboto', sans-serif;
 }
 
 ::-moz-selection {
@@ -61,36 +59,53 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.container{
+  padding: 0 15px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-.header-container{
+header{
   background: #202020;
-  min-height: 2.5em;
-  padding: 1em 0;
+  padding: 0.8em 0;
 }
 
 .social{
   float: right;
-  margin-right: 10px;
+}
+
+.social i{
+  color: #fff;
+  margin-right: 5px;
 }
 
 .logo{
   float: left;
-  color: #FFF;
-  font-size: 1.8em;
-  margin-left: 10px;
-  font-weight: 600;
+  color: #C2C2C2;
+  font-size: 1.1em;
+  font-weight: 100;
   text-decoration: none;
 }
 
-.hero-container{
-  background: url(../img/hero-bg.jpg) center center no-repeat;
-  padding: 8em 1em;
-  background-size: cover;
+.logo:hover{
+  color: #fff;
 }
 
 .hero{
+  background: url(../img/hero-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.hero .container{
   text-align: center;
   color: #fff;
+  display: table;
+  width: 100%;
+}
+
+.hero .container .inner{
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .hero .title{
@@ -108,6 +123,7 @@ textarea {
 .hero .description{
   font-weight: 200;
   font-size: 1.3em;
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .hero h1,
@@ -115,17 +131,8 @@ textarea {
   margin: 0; 
 }
 
-.arrow{
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 36px 45px 0 45px;
-  border-color: #000000 transparent transparent transparent;
-}
-
 .main .row{
   margin: 3em 0;
-  display: table;
 }
 
 .main .col .header{
@@ -157,25 +164,55 @@ textarea {
   border-bottom: 0px;
 }
 
-.footer-container{
-  background: #2C2C2C;
-  padding: 2em 1em;
-  text-align: center;
+.main-wrapper{
+  min-height: 100%;
+  height: auto !important;
+  margin: 0px auto -85px;
+}
+
+.main-wrapper:after{
+  content: "";
+  display: block;
+}
+
+footer, .main-wrapper:after{
+  height: 85px;
 }
 
 footer{
+  background: #2C2C2C;
+  text-align: center;
+}
+
+footer .container{
   color: #727272;
   font-size: 0.9em;
   font-weight: 100;
+  margin-top: 33px;
 }
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (max-width: 480px) {
-  
+@media only screen and (min-width: 1140px) {
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
 
+@media only screen and (max-width: 768px) {
+  .main .col{
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   .main .col{
     width: 100%;
     padding-left: 5px;
@@ -183,34 +220,9 @@ footer{
     margin-bottom: 15px;
   }
 
-  .hero-container{
-    padding: 5em 1em;
-  }
-
   .hero .title{
     font-size: 3em;
   }
-}
-
-@media only screen and (max-width: 768px) {
-  .main .col{
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 15px;
-  }
-}
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
 }
 
 /* ==========================================================================
