@@ -79,6 +79,10 @@ header{
   margin-right: 5px;
 }
 
+.social i:hover{
+  color: #B3D4FC;
+}
+
 .logo{
   float: left;
   color: #C2C2C2;
