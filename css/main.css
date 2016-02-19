@@ -10,9 +10,14 @@ textarea {
     font-family: 'Roboto', sans-serif;
 }
 
+html, body {
+  background: #2C2C2C;
+  height: 100%;
+}
+
 body {
-    font-size: 1em;
-    line-height: 1.4;
+  font-size: 1em;
+  line-height: 1.4
 }
 
 ::-moz-selection {
@@ -60,7 +65,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .container{
-  padding: 0 15px;
+  padding: 0 30px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -68,19 +73,10 @@ textarea {
 header{
   background: #202020;
   padding: 0.8em 0;
-}
-
-.social{
-  float: right;
-}
-
-.social i{
-  color: #fff;
-  margin-right: 5px;
-}
-
-.social i:hover{
-  color: #B3D4FC;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .logo{
@@ -95,91 +91,41 @@ header{
   color: #fff;
 }
 
-.hero{
-  background: url(../img/hero-bg.jpg) center center no-repeat;
-  background-size: cover;
-}
-
-.hero .container{
-  text-align: center;
+.main {
   color: #fff;
-  display: table;
-  width: 100%;
-}
-
-.hero .container .inner{
   display: table-cell;
   vertical-align: middle;
+  padding: 0 30px;
 }
 
-.hero .title{
-  font-size: 4em;
-  font-weight: 200;
-  line-height: 1.2em;
-  text-transform: uppercase;
+.main h1 {
+  font-size: 6em;
+  margin: 0;
+  font-weight: 100;
+  line-height: 1em;
 }
 
-.hero .title small{
-  font-size: inherit;
+.main h3 {
+  font-size: 1.8em;
+  margin: 0;
   font-weight: 100;
 }
 
-.hero .description{
-  font-weight: 200;
-  font-size: 1.3em;
-  color: rgba(255, 255, 255, 0.78);
-}
-
-.hero h1,
-.hero h3{
-  margin: 0; 
-}
-
-.main .row{
-  margin: 3em 0;
-}
-
-.main .col .header{
-  font-size: 1.4em;
-  font-weight: 200;
-  color: #555;
-  margin: 0;
-}
-
-.main .col{
-  width: 33%;
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px;
-  box-sizing: border-box;
-  color: #999;
-  font-weight: 300;
-  font-size: 1em;
-  text-align: center;
-}
-
-.main .col .icon{
-  text-align: center;
-  font-size: 2.2em;
-  margin-bottom: 0.2em;
-  color: #69B9FF;
-}
-
-.main a:link,
-.main a:visited{
-  color: #37A2FF;
-  border-bottom: 1px dotted #37A2FF;
+.main .co {
   text-decoration: none;
+  color: #FF9800;
 }
 
-.main a:hover{
-  border-bottom: 0px;
+.main .position {
+  color: #00BCD4;
 }
 
 .main-wrapper{
   min-height: 100%;
   height: auto !important;
   margin: 0px auto -85px;
+  width: 100%;
+  display: table;
 }
 
 .main-wrapper:after{
@@ -187,20 +133,29 @@ header{
   display: block;
 }
 
-footer, .main-wrapper:after{
-  height: 85px;
-}
-
 footer{
-  background: #2C2C2C;
-  text-align: center;
+  background: #000;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer .container{
-  color: #727272;
-  font-size: 0.9em;
-  font-weight: 100;
-  margin-top: 33px;
+  font-size: 1.1em;
+  font-weight: 200;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  color: #9E9E9E;
+}
+
+footer a:link, footer a:visited {
+  color: #9E9E9E;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
 }
 
 /* ==========================================================================
@@ -208,29 +163,13 @@ footer .container{
    ========================================================================== */
 
 @media only screen and (min-width: 1140px) {
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
 }
 
 @media only screen and (max-width: 768px) {
-  .main .col{
-    width: 100%;
-    padding-left: 60px;
-    padding-right: 60px;
-    margin-bottom: 15px;
-    text-align: center;
-  }
 }
 
 @media only screen and (max-width: 480px) {
-  .main .col{
-    width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-bottom: 15px;
-  }
+
 
   .hero .title{
     font-size: 3em;
