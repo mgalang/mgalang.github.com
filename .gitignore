@@ -1,3 +1,3 @@
 .DS_Store
 .htaccess
-node_modules/*
+source/resources/_gen
