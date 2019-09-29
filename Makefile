@@ -1,8 +1,9 @@
 build:
-	rm -rf ./docs
+	rm -rf ./public
 	hugo -s source
 
 deploy:
-	git add ./docs
+	cd public
+	git .
 	git commit -m 'Commit build'
-	git push origin master
+	git push origin gh-pages
