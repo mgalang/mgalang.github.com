@@ -3,6 +3,6 @@ build:
 
 deploy:
 	cd public
-	git .
+	git add .
 	git commit -m 'Commit build'
 	git push origin gh-pages
