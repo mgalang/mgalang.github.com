@@ -3,7 +3,7 @@ title = "About Marc"
 date = "2019-09-29"
 +++
 
-Software Developer and Technical Architect with over 10years of industry experience. Specialises in backend, integrations, and architecture. Knowledgeable in scrum, and agile methodologies.
+Is a Software Developer and Technical Architect with over 10years of industry experience. Specialises in backend, integrations, and architecture. Knowledgeable in scrum, and agile methodologies.
 
 Has worked with the following stacks and technology:
 
@@ -23,4 +23,4 @@ Has experience working with and implementing:
 
 Also curious about Golang, Serverless Framework, Static PWA
 
-Currently works as Technical architect at [Wunder](https://wunder.io)
+Currently working as Technical architect at [Wunder](https://wunder.io)
