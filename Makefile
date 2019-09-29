@@ -1,5 +1,4 @@
 build:
-	rm -rf ./public
 	hugo -s source
 
 deploy:
