@@ -21,6 +21,6 @@ Has experience working with and implementing:
 - Headless architecture
 - Automated Accessibility tests
 
-Also curious about Golang, Serverless Framework, Static PWA
+Also curious about Golang, Serverless Framework, Machine Learning, Data Science.
 
 Currently working as Technical architect at [Wunder](https://wunder.io)
