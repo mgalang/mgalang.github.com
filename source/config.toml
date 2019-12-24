@@ -61,6 +61,6 @@ publishDir = "../public"
 [menu]
 
   [[menu.main]]
-    name = "About"
+    name = "About Me"
     url = "about/"
     weight = 20
