@@ -14,13 +14,14 @@ Has worked with the following stacks and technology:
 - Docker, Ansible
 - Linux, Nginx, Apache
 
-Has experience working with and implementing:
+Has experience desinging, implementing, and delivering:
 
-- End-to-end and automated tests
-- Continuous integration (CI), Continuous delivery (CD)
-- Headless architecture
-- Automated Accessibility tests
+- End-to-end and Automated tests
+- Continuous Integration and Delivery (CI/CD)
+- Headless Architecture
+- Automated Accessibility Tests
+- Clustered Storage
 
-Also curious about Golang, Serverless Framework, Machine Learning, Data Science.
+Also curious about Cybersecurity, Golang, Serverless Framework, Microservice and Event Driven Architectures, Machine Learning.
 
-Currently working as Technical architect at [Wunder](https://wunder.io)
+I'm currently working as Technical architect at [Wunder](https://wunder.io)
